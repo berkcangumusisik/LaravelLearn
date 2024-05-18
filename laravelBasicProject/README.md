@@ -22,3 +22,8 @@ php artisan db:show komutu, Laravel'in bir veritabanı hakkında bilgi almanız�
 ##### Migration Geri Al : php artisan migrate:rollback
 ##### Migration Geri Al Tümü : php artisan migrate:reset
 ##### Migration Yönetimi : php artisan migrate:status
+##### Factory sınıfı oluşturma : php artisan make:factory <FactoryName>
+Factory sınıfı, bir veri tabanı tablosu için örnek veri oluşturmak için kullanılan bir sınıftır.
+##### Örnek veriler ile doldurmak için : php artisan db:seed
+##### Migration Yönetimi : php artisan migrate:status
+##### Controller Oluşturma php artisan make:controller --resource ListingController

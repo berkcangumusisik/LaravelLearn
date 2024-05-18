@@ -1,6 +1,6 @@
 import { createApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/inertia-vue3";
-import MainLayout from "../js/Pages/Layouts/MainLayout.vue";
+import MainLayout from "./Pages/Layouts/MainLayout.vue";
 
 createInertiaApp({
     resolve: async (name) => {
@@ -11,6 +11,8 @@ createInertiaApp({
 
         return page;
     },
+    // function () {}
+    // {el: xxx, App: xxx, props: xxx}
     setup({ el, App, props, plugin }) {
         createApp({ render: () => h(App, props) })
             .use(plugin)
